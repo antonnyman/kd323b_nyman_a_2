@@ -3,16 +3,21 @@
     package="se.mah.k3lara.assigment2_starter"
     android:versionCode="1"
     android:versionName="1.0" >
+    
 
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="19" />
 
+    <uses-permission
+        android:name="android.permission.INTERNET"/>
+
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name="se.mah.k3lara.assigment2_starter.view.MainActivity"
             android:label="@string/app_name" >
