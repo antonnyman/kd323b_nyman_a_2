@@ -16,7 +16,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="64dp"
-        android:text="Ples no log" />
+        android:text="@string/action_login" />
 
     <EditText
         android:id="@+id/editText1"
@@ -37,7 +37,7 @@
         android:layout_below="@+id/editText2"
         android:layout_marginTop="38dp"
         android:onClick="buttonClick"
-        android:text="Log in" />
+        android:text="@string/action_login" />
 
     <EditText
         android:id="@+id/editText2"

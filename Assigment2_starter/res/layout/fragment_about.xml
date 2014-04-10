@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:padding="@dimen/activity_horizontal_margin"
         android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:text="I like big batsu"
+        android:text="@string/hello_world"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </LinearLayout>

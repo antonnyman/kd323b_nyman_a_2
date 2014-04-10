@@ -7,6 +7,7 @@ import android.app.Dialog;
 import android.app.DialogFragment;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -15,12 +16,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.os.Build;
 
 public class MainActivity extends Activity {
 
 	WebView webview;
+	Intent intent;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -71,6 +74,12 @@ public class MainActivity extends Activity {
 	}
 	
 	public void buttonClick(View v){
+		EditText user = (EditText) findViewById(R.id.editText1);
+		EditText pass = (EditText) findViewById(R.id.editText2);
+		if(user.getText().toString().equals("james") && pass.getText().toString().equals("bronco")) {
+			intent = new Intent(this, LoggedInFragment.class);
+			startActivity(intent);
+		}
 		Log.i("k3lara","click");
 	}
 }
